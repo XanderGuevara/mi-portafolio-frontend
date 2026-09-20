@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #1e293b;
+  background-color: #f8fafc;
+  line-height: 1.5;
+}
+
+/* Ancho central exacto del diseño */
+.content-wrapper {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero */
+.hero {
+  background-color: #0b111e;
+  padding: 48px 0 38px;
+}
+
+.hero-prompt {
+  margin-bottom: 16px;
+}
+
+.hero-prompt code {
+  color: #eab308;
+  font-family: monospace;
+  font-size: 0.85rem;
+}
+
+.hero-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.hero-description {
+  color: #94a3b8;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  max-width: 580px;
+  margin-bottom: 12px;
+}
+
+.hero-status {
+  color: #64748b;
+  font-size: 0.78rem;
+  margin-bottom: 22px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.btn {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #f59e0b;
+  color: #000000;
+  border: 1px solid #f59e0b;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #334155;
+}
+
+.hero-social {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.hero-social a {
+  color: #94a3b8;
+  font-size: 0.78rem;
+  text-decoration: none;
+}
+
+/* Contenedor principal claro */
+.main-content {
+  background-color: #f8fafc;
+  padding: 48px 0 64px;
+}
+
+/* Sobre mí */
+.section-about {
+  margin-bottom: 48px;
+}
+
+.about-card {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.about-avatar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.about-body h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.about-body p {
+  color: #475569;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.about-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Habilidades */
+.section-skills {
+  margin-bottom: 48px;
+}
+
+.section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.skills-column h3 {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #475569;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+}
+
+/* Líneas de colores de la muestra */
+.col-blue h3 {
+  border-bottom: 2px solid #38bdf8;
+}
+
+.col-teal h3 {
+  border-bottom: 2px solid #2dd4bf;
+}
+
+.col-green h3 {
+  border-bottom: 2px solid #4ade80;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  background: #ffffff;
+  color: #1e293b;
+  border: 1px solid #e2e8f0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+/* Proyectos */
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 16px;
+}
+
+.projects-subtitle {
+  font-size: 0.78rem;
+  color: #64748b;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.project-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+/* Bordes superiores de proyectos */
+.border-teal {
+  border-top: 3px solid #14b8a6;
+}
+
+.border-yellow {
+  border-top: 3px solid #f59e0b;
+}
+
+.border-darkblue {
+  border-top: 3px solid #1e293b;
+}
+
+.project-card h3 {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  color: #64748b;
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+/* Responsivo */
+@media (max-width: 640px) {
+  .about-card {
+    flex-direction: column;
+  }
+
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-header {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
